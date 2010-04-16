@@ -1,0 +1,9 @@
+GENE (GEne – Network Engine)
+Toolkit for small step-by-step network games.
+Author: Yuri ‘Ree’ Borisoff (mailto: yuri.borisoff@gmail.com)
+
+YOU CAN FREELY COPY, MODIFY AND DISTRIBUTY IT
+CODE IS PRESENTED 'AS IS' WITHOUT ANY WARRANTIES
+
+Used libraries: 
+Qt >= 4.6 (http://qt.nokia.com/)
