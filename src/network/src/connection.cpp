@@ -85,10 +85,10 @@ bool Connection::readHeader(QDataStream &stream)
 {
     quint16 blockSize(0);
     int bytes(0);
-    if ((bytes = bytesAvailable()) < (int)sizeof(quint16))
+    if ((bytes = bytesAvailable()) < static_cast<int>(sizeof(quint16)))
         return false;
     stream >> blockSize;
-    if ((bytes = bytesAvailable()) < blockSize || blockSize < 0)
+    if (((bytes = bytesAvailable()) < static_cast<int>(blockSize)))
         return false;
 
     return true;
