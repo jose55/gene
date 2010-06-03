@@ -26,7 +26,7 @@ void Connection::send(const QString& request, const QVariant &params)
         m_requests.value(request)->send(this, params);
     } else
     {
-        LOG_WARNING(QString("Request %1 is missing").arg(requestId));
+        LOG_WARNING(QString("Request %1 is missing").arg(request));
     }
 }
 
@@ -37,7 +37,7 @@ void Connection::broadcast(const QString &request, const QVariant &params)
         m_requests.value(request)->broadcast(this, params);
     } else
     {
-        LOG_WARNING(QString("Request %1 is missing").arg(requestId));
+        LOG_WARNING(QString("Request %1 is missing").arg(request));
     }
 }
 
